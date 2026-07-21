@@ -27,8 +27,11 @@ Extensões: Marinho `#162230` · Dourado fosco `#B69A67` · Mineral `#6E6A65` ·
 
 ## Tipografia
 
-- **Display / títulos:** Cormorant Garamond (serifada, leve e elegante) — evoca o wordmark.
-- **Texto / interface:** Jost (geométrica leve) com *tracking* amplo para eyebrows e a tagline.
+- **Display / wordmark / títulos:** Bodoni Moda — *fashion serif* de alto contraste, substituto digital mais fiel ao logotipo proprietário By Jove!.
+- **Texto serifado (citações):** Cormorant Garamond.
+- **Interface / corpo:** Jost (geométrica leve) com *tracking* amplo para eyebrows e a tagline.
+
+> **Ponto proprietário:** o pingo dourado (`#C9A66A`) é sempre o **ponto do "j"** — nunca o "!". O ponto de exclamação permanece em carvão. Para uso pixel-perfect, substitua o wordmark tipográfico pelo **vetor oficial** (SVG/PDF) da marca.
 
 ## Estrutura
 

@@ -28,9 +28,17 @@
   --bj-line-soft: rgba(34, 39, 47, 0.08);
   --bj-accent:    var(--bj-ouro);
 
-  /* ---- Tipografia ---- */
+  /* ---- Tipografia ----
+     Display / wordmark / títulos: Bodoni Moda (fashion serif de alto contraste,
+     substituto digital mais fiel ao logotipo proprietário By Jove!).
+     Serifada de texto (citações longas): Cormorant. Interface: Jost. */
+  --bj-display: "Bodoni Moda", "Didot", "Playfair Display", Georgia, serif;
   --bj-serif: "Cormorant Garamond", "Cormorant", Georgia, "Times New Roman", serif;
   --bj-sans:  "Jost", "Futura", "Century Gothic", "Helvetica Neue", Arial, sans-serif;
+
+  /* Ponto proprietário (pingo dourado do "j") — nunca no "!" */
+  --bj-tittle-size: 0.13em;
+  --bj-tittle-rise: 0.22em;
 
   /* ---- Escala tipográfica ---- */
   --bj-fs-display: clamp(3.2rem, 8vw, 6rem);

@@ -1,4 +1,4 @@
-<!-- @dsCard group="Patterns" name="Hero" subtitle="Bloco de abertura editorial · eyebrow, display serif, CTA" w="1240" h="760" -->
+<!-- @dsCard group="Patterns" name="Hero" subtitle="Abertura editorial · wordmark Bodoni, ponto dourado, CTA" w="1240" h="760" -->
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -6,17 +6,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>By Jove! · Hero</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cormorant+Garamond:wght@300;400&family=Jost:wght@300;400;500&display=swap');
 :root{--offwhite:#F6F2EC;--areia:#E7DFD2;--taupe:#D1C6B7;--carvao:#22272F;--ouro:#C9A66A;--mineral:#6E6A65;
-  --serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost","Century Gothic",Arial,sans-serif;}
+  --display:"Bodoni Moda",Didot,Georgia,serif;--serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost","Century Gothic",Arial,sans-serif;}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--offwhite);color:var(--carvao);font-family:var(--sans);font-weight:300;-webkit-font-smoothing:antialiased}
 .hero{display:grid;grid-template-columns:1.05fr .95fr;min-height:100vh}
 .left{padding:88px 72px;display:flex;flex-direction:column;justify-content:center}
 .eyebrow{font-size:.7rem;letter-spacing:.32em;text-transform:uppercase;color:var(--mineral);display:flex;align-items:center;gap:11px}
 .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--ouro)}
-.display{font-family:var(--serif);font-weight:300;font-size:clamp(3.4rem,6vw,5.4rem);line-height:1;margin:26px 0 8px;letter-spacing:.005em}
-.display .em{color:var(--ouro)}
+.wm{font-family:var(--display);font-weight:400;font-size:clamp(3.4rem,6vw,5.4rem);line-height:1;margin:26px 0 12px;letter-spacing:.005em;position:relative;display:inline-block}
+.jw{position:relative;display:inline-block}
+.jw .tt{position:absolute;top:-.22em;left:50%;transform:translateX(-50%);width:.13em;height:.13em;border-radius:50%;background:var(--ouro)}
 .tagline{font-size:1rem;letter-spacing:.42em;text-transform:lowercase;color:var(--mineral);margin-bottom:28px}
 .lead{font-family:var(--sans);font-weight:300;font-size:1.08rem;line-height:1.8;color:#3a3f46;max-width:440px;margin-bottom:38px}
 .cta{display:flex;gap:16px;align-items:center}
@@ -26,10 +27,9 @@ body{background:var(--offwhite);color:var(--carvao);font-family:var(--sans);font
 .linkdot{font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px;color:var(--carvao)}
 .linkdot .dot{width:6px;height:6px;border-radius:50%;background:var(--ouro)}
 .right{background:linear-gradient(155deg,#E7DFD2,#D1C6B7 55%,#B2A89B);position:relative;display:flex;align-items:flex-end;padding:56px}
-.mark{position:absolute;top:56px;right:56px;font-family:var(--serif);font-size:2rem;color:var(--carvao);position:relative}
-.right .mark{position:absolute}
-.mark .dt{position:absolute;top:.1em;right:-.5em;width:8px;height:8px;border-radius:50%;background:var(--ouro)}
-.quote{font-family:var(--serif);font-weight:400;font-size:1.7rem;line-height:1.3;color:var(--carvao);max-width:80%}
+.mark{position:absolute;top:56px;right:56px;font-family:var(--display);font-weight:500;font-size:2rem;color:var(--carvao)}
+.mark .jw .tt{top:.02em;left:auto;right:-.16em;transform:none;width:.16em;height:.16em}
+.quote{font-family:var(--serif);font-weight:400;font-size:1.9rem;line-height:1.3;color:var(--carvao);max-width:82%}
 .quote .dot-inline{color:var(--ouro)}
 </style>
 </head>
@@ -37,7 +37,7 @@ body{background:var(--offwhite);color:var(--carvao);font-family:var(--sans);font
   <div class="hero">
     <div class="left">
       <div class="eyebrow"><span class="dot"></span>Activewear feminino · brasileiro</div>
-      <div class="display">by jove<span class="em">!</span></div>
+      <div class="wm">by&nbsp;<span class="jw">j<span class="tt"></span></span>ove!</div>
       <div class="tagline">feita de encontros.</div>
       <p class="lead">Algumas histórias começam em movimento. A nossa começou em uma quadra — entre jogos, conversas e afinidades que seguem muito além do esporte.</p>
       <div class="cta">
@@ -46,7 +46,7 @@ body{background:var(--offwhite);color:var(--carvao);font-family:var(--sans);font
       </div>
     </div>
     <div class="right">
-      <div class="mark">bj<span class="dt"></span></div>
+      <div class="mark">b<span class="jw">j<span class="tt"></span></span></div>
       <div class="quote">A quadra foi o nosso primeiro ponto de encontro<span class="dot-inline">.</span></div>
     </div>
   </div>

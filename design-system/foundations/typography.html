@@ -1,4 +1,4 @@
-<!-- @dsCard group="Foundations" name="Tipografia" subtitle="Cormorant Garamond display · Jost sans · tracking amplo" w="1240" h="920" -->
+<!-- @dsCard group="Foundations" name="Tipografia" subtitle="Bodoni Moda display · Cormorant texto · Jost interface" w="1240" h="940" -->
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -6,24 +6,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>By Jove! · Tipografia</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&display=swap');
 :root{--offwhite:#F6F2EC;--carvao:#22272F;--ouro:#C9A66A;--mineral:#6E6A65;
-  --serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost","Century Gothic",Arial,sans-serif;}
+  --display:"Bodoni Moda",Didot,Georgia,serif;--serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost","Century Gothic",Arial,sans-serif;}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--offwhite);color:var(--carvao);font-family:var(--sans);font-weight:300;padding:64px;-webkit-font-smoothing:antialiased}
 .eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--mineral)}
-h1.title{font-family:var(--serif);font-weight:400;font-size:2.8rem;margin:8px 0 4px}
+h1.title{font-family:var(--display);font-weight:500;font-size:2.6rem;margin:8px 0 4px}
 .tag{font-size:.8rem;letter-spacing:.42em;text-transform:lowercase;color:var(--mineral)}
 .rule{height:1px;background:rgba(34,39,47,.14);margin:32px 0 40px}
-.row{display:grid;grid-template-columns:150px 1fr;gap:32px;align-items:baseline;padding:20px 0;border-bottom:1px solid rgba(34,39,47,.08)}
-.lbl{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mineral);line-height:1.6}
-.display{font-family:var(--serif);font-weight:300;font-size:5rem;line-height:.95;letter-spacing:.01em}
-.h1{font-family:var(--serif);font-weight:400;font-size:3rem}
-.h2{font-family:var(--serif);font-weight:500;font-size:2rem}
+.row{display:grid;grid-template-columns:170px 1fr;gap:32px;align-items:baseline;padding:20px 0;border-bottom:1px solid rgba(34,39,47,.08)}
+.lbl{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mineral);line-height:1.7}
+.display{font-family:var(--display);font-weight:400;font-size:4.6rem;line-height:1;letter-spacing:.005em;position:relative;display:inline-block}
+.jw{position:relative;display:inline-block}
+.jw .tt{position:absolute;top:-.22em;left:50%;transform:translateX(-50%);width:.13em;height:.13em;border-radius:50%;background:var(--ouro)}
+.h1{font-family:var(--display);font-weight:400;font-size:2.7rem;line-height:1.1}
+.h2{font-family:var(--display);font-weight:500;font-size:1.8rem}
+.serif-text{font-family:var(--serif);font-weight:400;font-size:1.6rem;line-height:1.4;color:#33383f}
 .eyebrow-spec{font-family:var(--sans);font-weight:400;font-size:.75rem;letter-spacing:.34em;text-transform:uppercase}
 .body{font-family:var(--sans);font-weight:300;font-size:1.05rem;line-height:1.75;max-width:640px;color:#33383f}
 .tagline-spec{font-family:var(--sans);font-weight:300;font-size:1.1rem;letter-spacing:.42em;text-transform:lowercase;color:var(--mineral)}
-.dot{color:var(--ouro)}
 </style>
 </head>
 <body>
@@ -32,9 +34,10 @@ h1.title{font-family:var(--serif);font-weight:400;font-size:2.8rem;margin:8px 0 
   <div class="tag">feita de encontros.</div>
   <div class="rule"></div>
 
-  <div class="row"><div class="lbl">Display<br>Cormorant · 300</div><div class="display">by jove<span class="dot">!</span></div></div>
-  <div class="row"><div class="lbl">H1<br>Cormorant · 400</div><div class="h1">Algumas histórias começam em movimento</div></div>
-  <div class="row"><div class="lbl">H2<br>Cormorant · 500</div><div class="h2">Há encontros que continuam</div></div>
+  <div class="row"><div class="lbl">Wordmark · Display<br>Bodoni Moda · 400</div><div class="display">by&nbsp;<span class="jw">j<span class="tt"></span></span>ove!</div></div>
+  <div class="row"><div class="lbl">H1<br>Bodoni Moda · 400</div><div class="h1">Algumas histórias começam em movimento</div></div>
+  <div class="row"><div class="lbl">H2<br>Bodoni Moda · 500</div><div class="h2">Há encontros que continuam</div></div>
+  <div class="row"><div class="lbl">Citação · texto serifado<br>Cormorant · 400</div><div class="serif-text">O que começa na quadra segue pela vida.</div></div>
   <div class="row"><div class="lbl">Eyebrow<br>Jost · 400 · 0.34em</div><div class="eyebrow-spec">Comunidade · jove! club</div></div>
   <div class="row"><div class="lbl">Corpo<br>Jost · 300</div><div class="body">A By Jove! conversa com mulheres inteligentes e criteriosas. O texto respeita essa característica, desenvolvendo ideias com naturalidade e precisão — contenção, clareza e consistência.</div></div>
   <div class="row" style="border-bottom:none"><div class="lbl">Tagline<br>Jost · 300 · 0.42em</div><div class="tagline-spec">feita de encontros.</div></div>

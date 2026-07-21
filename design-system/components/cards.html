@@ -6,13 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>By Jove! · Cards</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&display=swap');
 :root{--offwhite:#F6F2EC;--areia:#E7DFD2;--taupe:#D1C6B7;--pedra:#B2A89B;--carvao:#22272F;--ouro:#C9A66A;--mineral:#6E6A65;
-  --serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost","Century Gothic",Arial,sans-serif;}
+  --display:"Bodoni Moda",Didot,Georgia,serif;--serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost","Century Gothic",Arial,sans-serif;}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--offwhite);color:var(--carvao);font-family:var(--sans);font-weight:300;padding:64px;-webkit-font-smoothing:antialiased}
 .eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--mineral)}
-h1.title{font-family:var(--serif);font-weight:400;font-size:2.8rem;margin:8px 0 4px}
+h1.title{font-family:var(--display);font-weight:500;font-size:2.6rem;margin:8px 0 4px}
 .tag{font-size:.8rem;letter-spacing:.42em;text-transform:lowercase;color:var(--mineral)}
 .rule{height:1px;background:rgba(34,39,47,.14);margin:32px 0 44px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
@@ -24,7 +24,7 @@ h1.title{font-family:var(--serif);font-weight:400;font-size:2.8rem;margin:8px 0 
 .badge{position:absolute;top:16px;left:16px;background:rgba(246,242,236,.9);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;padding:6px 12px;border-radius:999px;color:var(--carvao)}
 .fav{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;background:rgba(246,242,236,.9);display:flex;align-items:center;justify-content:center;color:var(--carvao);font-size:.95rem}
 .pinfo{padding:20px}
-.pname{font-family:var(--serif);font-weight:500;font-size:1.35rem;line-height:1.1}
+.pname{font-family:var(--display);font-weight:500;font-size:1.3rem;line-height:1.1}
 .pcat{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mineral);margin-top:6px}
 .pprice{display:flex;align-items:center;gap:8px;margin-top:16px;font-size:1rem}
 .pprice .dot{width:6px;height:6px;border-radius:50%;background:var(--ouro)}
@@ -41,8 +41,9 @@ h1.title{font-family:var(--serif);font-weight:400;font-size:2.8rem;margin:8px 0 
 /* membership card */
 .member{grid-column:span 1;background:var(--carvao);color:var(--offwhite);border-radius:16px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;min-height:230px}
 .m-top{display:flex;justify-content:space-between;align-items:flex-start}
-.m-brand{font-family:var(--serif);font-size:1.5rem;position:relative}
-.m-brand .dt{position:absolute;top:.05em;right:-.5em;width:7px;height:7px;border-radius:50%;background:var(--ouro)}
+.m-brand{font-family:var(--display);font-weight:400;font-size:1.5rem;position:relative;display:inline-block}
+.m-brand .jw{position:relative;display:inline-block}
+.m-brand .jw .tt{position:absolute;top:-.22em;left:50%;transform:translateX(-50%);width:.13em;height:.13em;border-radius:50%;background:var(--ouro)}
 .m-club{font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--ouro)}
 .m-name{font-family:var(--serif);font-size:1.6rem;margin-bottom:4px}
 .m-id{font-size:.68rem;letter-spacing:.2em;color:#b2a89b}
@@ -81,7 +82,7 @@ h1.title{font-family:var(--serif);font-weight:400;font-size:2.8rem;margin:8px 0 
     <!-- membership -->
     <div class="member">
       <div class="m-top">
-        <div class="m-brand">by jove<span class="dt"></span></div>
+        <div class="m-brand">by <span class="jw">j<span class="tt"></span></span>ove!</div>
         <div class="m-club">jove! club</div>
       </div>
       <div>
