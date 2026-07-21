@@ -1,0 +1,63 @@
+<!-- @dsCard group="Components" name="Badges & tags" subtitle="Categoria · status · chip de encontro · o ponto marcador" w="1240" h="620" -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>By Jove! · Badges</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap');
+:root{--offwhite:#F6F2EC;--areia:#E7DFD2;--taupe:#D1C6B7;--carvao:#22272F;--ouro:#C9A66A;--mineral:#6E6A65;--verde:#6F786B;
+  --serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost","Century Gothic",Arial,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--offwhite);color:var(--carvao);font-family:var(--sans);font-weight:300;padding:64px;-webkit-font-smoothing:antialiased}
+.eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--mineral)}
+h1.title{font-family:var(--serif);font-weight:400;font-size:2.8rem;margin:8px 0 4px}
+.tag{font-size:.8rem;letter-spacing:.42em;text-transform:lowercase;color:var(--mineral)}
+.rule{height:1px;background:rgba(34,39,47,.14);margin:32px 0 40px}
+.sub{font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mineral);margin:30px 0 18px}
+.row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.badge{font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;padding:7px 16px;border-radius:999px;display:inline-flex;align-items:center;gap:8px}
+.b-solid{background:var(--carvao);color:var(--offwhite)}
+.b-gold{background:var(--ouro);color:var(--carvao)}
+.b-soft{background:var(--areia);color:var(--carvao)}
+.b-outline{border:1px solid rgba(34,39,47,.25);color:var(--carvao)}
+.b-green{background:rgba(111,120,107,.16);color:#4d5449}
+.badge .dot{width:6px;height:6px;border-radius:50%;background:var(--ouro)}
+.b-solid .dot{background:var(--ouro)}
+.b-gold .dot{background:var(--carvao)}
+.b-green .dot{background:var(--verde)}
+.marker{display:inline-flex;align-items:center;gap:10px;font-family:var(--serif);font-size:1.2rem}
+.marker .dot{width:7px;height:7px;border-radius:50%;background:var(--ouro)}
+</style>
+</head>
+<body>
+  <div class="eyebrow">By Jove! · Components</div>
+  <h1 class="title">Badges &amp; tags</h1>
+  <div class="tag">feita de encontros.</div>
+  <div class="rule"></div>
+
+  <div class="sub">Categoria</div>
+  <div class="row">
+    <span class="badge b-solid">Nova coleção</span>
+    <span class="badge b-soft">Essenciais</span>
+    <span class="badge b-outline">Beach tennis</span>
+    <span class="badge b-gold"><span class="dot"></span>jove! club</span>
+  </div>
+
+  <div class="sub">Status</div>
+  <div class="row">
+    <span class="badge b-green"><span class="dot"></span>Disponível</span>
+    <span class="badge b-outline">Últimas peças</span>
+    <span class="badge b-soft">Lista de espera</span>
+  </div>
+
+  <div class="sub">Chip de encontro · o ponto como marcador</div>
+  <div class="row">
+    <span class="marker"><span class="dot"></span>Encontro</span>
+    <span class="marker"><span class="dot"></span>Afinidade</span>
+    <span class="marker"><span class="dot"></span>Pertencimento</span>
+    <span class="marker"><span class="dot"></span>Movimento</span>
+  </div>
+</body>
+</html>

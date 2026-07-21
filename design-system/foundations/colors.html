@@ -1,0 +1,57 @@
+<!-- @dsCard group="Foundations" name="Paleta de cores" subtitle="6 oficiais + 4 extensões · dourado é acento" w="1240" h="880" -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>By Jove! · Paleta de cores</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap');
+:root{
+  --offwhite:#F6F2EC;--areia:#E7DFD2;--taupe:#D1C6B7;--pedra:#B2A89B;--carvao:#22272F;--ouro:#C9A66A;
+  --marinho:#162230;--ouro-fosco:#B69A67;--mineral:#6E6A65;--verde:#6F786B;
+  --serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost","Century Gothic",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--offwhite);color:var(--carvao);font-family:var(--sans);font-weight:300;-webkit-font-smoothing:antialiased;padding:64px}
+.eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--mineral)}
+h1{font-family:var(--serif);font-weight:400;font-size:2.8rem;letter-spacing:.01em;margin:8px 0 4px}
+.tag{font-size:.8rem;letter-spacing:.42em;text-transform:lowercase;color:var(--mineral)}
+.rule{height:1px;background:rgba(34,39,47,.14);margin:32px 0 40px}
+.sub{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mineral);margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-bottom:44px}
+.grid.ext{grid-template-columns:repeat(4,1fr);max-width:70%}
+.sw{border-radius:10px;overflow:hidden;border:1px solid rgba(34,39,47,.08);background:#FBF9F5}
+.chip{height:120px;position:relative}
+.dot{position:absolute;top:14px;right:14px;width:9px;height:9px;border-radius:50%;background:var(--ouro)}
+.meta{padding:12px 14px 16px}
+.name{font-size:.9rem;letter-spacing:.02em}
+.hex{font-size:.72rem;letter-spacing:.12em;color:var(--mineral);margin-top:3px}
+.fn{font-size:.7rem;color:var(--mineral);margin-top:8px;line-height:1.5;font-style:italic;font-family:var(--serif);font-size:.86rem}
+</style>
+</head>
+<body>
+  <div class="eyebrow">By Jove! · Foundations</div>
+  <h1>Paleta de cores</h1>
+  <div class="tag">feita de encontros.</div>
+  <div class="rule"></div>
+
+  <div class="sub">Paleta oficial</div>
+  <div class="grid">
+    <div class="sw"><div class="chip" style="background:#F6F2EC"><span class="dot"></span></div><div class="meta"><div class="name">Off-white</div><div class="hex">#F6F2EC</div><div class="fn">Base clara e silenciosa.</div></div></div>
+    <div class="sw"><div class="chip" style="background:#E7DFD2"></div><div class="meta"><div class="name">Areia</div><div class="hex">#E7DFD2</div><div class="fn">Acolhimento e naturalidade.</div></div></div>
+    <div class="sw"><div class="chip" style="background:#D1C6B7"></div><div class="meta"><div class="name">Taupe</div><div class="hex">#D1C6B7</div><div class="fn">Neutro quente intermediário.</div></div></div>
+    <div class="sw"><div class="chip" style="background:#B2A89B"></div><div class="meta"><div class="name">Pedra</div><div class="hex">#B2A89B</div><div class="fn">Neutralidade e equilíbrio.</div></div></div>
+    <div class="sw"><div class="chip" style="background:#22272F"></div><div class="meta"><div class="name">Carvão</div><div class="hex">#22272F</div><div class="fn">Cor principal da marca.</div></div></div>
+    <div class="sw"><div class="chip" style="background:#C9A66A"></div><div class="meta"><div class="name">Ouro acetinado</div><div class="hex">#C9A66A</div><div class="fn">Ponto de encontro — acento.</div></div></div>
+  </div>
+
+  <div class="sub">Extensões cromáticas</div>
+  <div class="grid ext">
+    <div class="sw"><div class="chip" style="background:#162230"></div><div class="meta"><div class="name">Marinho</div><div class="hex">#162230</div><div class="fn">Profundidade e estabilidade.</div></div></div>
+    <div class="sw"><div class="chip" style="background:#B69A67"></div><div class="meta"><div class="name">Dourado fosco</div><div class="hex">#B69A67</div><div class="fn">Assinatura e valor.</div></div></div>
+    <div class="sw"><div class="chip" style="background:#6E6A65"></div><div class="meta"><div class="name">Mineral</div><div class="hex">#6E6A65</div><div class="fn">Neutralidade mineral.</div></div></div>
+    <div class="sw"><div class="chip" style="background:#6F786B"></div><div class="meta"><div class="name">Verde discreto</div><div class="hex">#6F786B</div><div class="fn">Movimento e bem-estar.</div></div></div>
+  </div>
+</body>
+</html>

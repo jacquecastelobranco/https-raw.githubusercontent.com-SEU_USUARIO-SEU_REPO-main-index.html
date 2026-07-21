@@ -1,0 +1,94 @@
+<!-- @dsCard group="Components" name="Cards" subtitle="Produto · conteúdo/encontro · membership jove! club" w="1240" h="820" -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>By Jove! · Cards</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap');
+:root{--offwhite:#F6F2EC;--areia:#E7DFD2;--taupe:#D1C6B7;--pedra:#B2A89B;--carvao:#22272F;--ouro:#C9A66A;--mineral:#6E6A65;
+  --serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost","Century Gothic",Arial,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--offwhite);color:var(--carvao);font-family:var(--sans);font-weight:300;padding:64px;-webkit-font-smoothing:antialiased}
+.eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--mineral)}
+h1.title{font-family:var(--serif);font-weight:400;font-size:2.8rem;margin:8px 0 4px}
+.tag{font-size:.8rem;letter-spacing:.42em;text-transform:lowercase;color:var(--mineral)}
+.rule{height:1px;background:rgba(34,39,47,.14);margin:32px 0 44px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+
+/* product card */
+.card{background:#FBF9F5;border:1px solid rgba(34,39,47,.08);border-radius:16px;overflow:hidden;transition:.3s}
+.card:hover{box-shadow:0 18px 48px -24px rgba(34,39,47,.35);transform:translateY(-3px)}
+.thumb{height:230px;position:relative;display:flex;align-items:flex-end;padding:16px}
+.badge{position:absolute;top:16px;left:16px;background:rgba(246,242,236,.9);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;padding:6px 12px;border-radius:999px;color:var(--carvao)}
+.fav{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;background:rgba(246,242,236,.9);display:flex;align-items:center;justify-content:center;color:var(--carvao);font-size:.95rem}
+.pinfo{padding:20px}
+.pname{font-family:var(--serif);font-weight:500;font-size:1.35rem;line-height:1.1}
+.pcat{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mineral);margin-top:6px}
+.pprice{display:flex;align-items:center;gap:8px;margin-top:16px;font-size:1rem}
+.pprice .dot{width:6px;height:6px;border-radius:50%;background:var(--ouro)}
+.swatches{display:flex;gap:7px;margin-top:14px}
+.sw{width:16px;height:16px;border-radius:50%;border:1px solid rgba(34,39,47,.15)}
+
+/* content / encontro card */
+.content-card{grid-column:span 1;background:var(--areia);border-radius:16px;padding:28px;display:flex;flex-direction:column;justify-content:space-between}
+.cc-eyebrow{font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--mineral);display:flex;gap:8px;align-items:center}
+.cc-eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--ouro)}
+.cc-title{font-family:var(--serif);font-weight:400;font-size:1.7rem;line-height:1.15;margin:18px 0}
+.cc-meta{font-size:.8rem;color:var(--mineral);letter-spacing:.02em}
+
+/* membership card */
+.member{grid-column:span 1;background:var(--carvao);color:var(--offwhite);border-radius:16px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;min-height:230px}
+.m-top{display:flex;justify-content:space-between;align-items:flex-start}
+.m-brand{font-family:var(--serif);font-size:1.5rem;position:relative}
+.m-brand .dt{position:absolute;top:.05em;right:-.5em;width:7px;height:7px;border-radius:50%;background:var(--ouro)}
+.m-club{font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--ouro)}
+.m-name{font-family:var(--serif);font-size:1.6rem;margin-bottom:4px}
+.m-id{font-size:.68rem;letter-spacing:.2em;color:#b2a89b}
+</style>
+</head>
+<body>
+  <div class="eyebrow">By Jove! · Components</div>
+  <h1 class="title">Cards</h1>
+  <div class="tag">feita de encontros.</div>
+  <div class="rule"></div>
+
+  <div class="grid">
+    <!-- product -->
+    <div class="card">
+      <div class="thumb" style="background:linear-gradient(160deg,#E7DFD2,#D1C6B7)">
+        <span class="badge">Nova coleção</span>
+        <span class="fav">♡</span>
+      </div>
+      <div class="pinfo">
+        <div class="pname">Conjunto Encontro</div>
+        <div class="pcat">Activewear · quadra & rotina</div>
+        <div class="pprice"><span class="dot"></span>R$ 389,00</div>
+        <div class="swatches"><span class="sw" style="background:#22272F"></span><span class="sw" style="background:#E7DFD2"></span><span class="sw" style="background:#6F786B"></span><span class="sw" style="background:#C9A66A"></span></div>
+      </div>
+    </div>
+
+    <!-- content / encontro -->
+    <div class="content-card">
+      <div>
+        <div class="cc-eyebrow"><span class="dot"></span>Encontro</div>
+        <div class="cc-title">O que começa na quadra segue pela vida.</div>
+      </div>
+      <div class="cc-meta">Beach tennis · São Paulo · sábado, 09h</div>
+    </div>
+
+    <!-- membership -->
+    <div class="member">
+      <div class="m-top">
+        <div class="m-brand">by jove<span class="dt"></span></div>
+        <div class="m-club">jove! club</div>
+      </div>
+      <div>
+        <div class="m-name">Giovana R.</div>
+        <div class="m-id">MEMBRO · 001 · DESDE 2026</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

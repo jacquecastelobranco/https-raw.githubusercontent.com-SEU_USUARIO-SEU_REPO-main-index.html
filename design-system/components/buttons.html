@@ -1,0 +1,75 @@
+<!-- @dsCard group="Components" name="Botões" subtitle="Primário · secundário · ghost · link-dot · 3 tamanhos" w="1240" h="760" -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>By Jove! · Botões</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap');
+:root{--offwhite:#F6F2EC;--areia:#E7DFD2;--carvao:#22272F;--ouro:#C9A66A;--mineral:#6E6A65;
+  --serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost","Century Gothic",Arial,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--offwhite);color:var(--carvao);font-family:var(--sans);font-weight:300;padding:64px;-webkit-font-smoothing:antialiased}
+.eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--mineral)}
+h1.title{font-family:var(--serif);font-weight:400;font-size:2.8rem;margin:8px 0 4px}
+.tag{font-size:.8rem;letter-spacing:.42em;text-transform:lowercase;color:var(--mineral)}
+.rule{height:1px;background:rgba(34,39,47,.14);margin:32px 0 40px}
+.sub{font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mineral);margin:34px 0 20px}
+.row{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+
+.btn{font-family:var(--sans);font-weight:400;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;
+  padding:15px 34px;border-radius:999px;border:1px solid transparent;cursor:pointer;transition:.25s ease;display:inline-flex;align-items:center;gap:10px}
+.btn-primary{background:var(--carvao);color:var(--offwhite)}
+.btn-primary:hover{background:#171b21}
+.btn-secondary{background:transparent;color:var(--carvao);border-color:var(--carvao)}
+.btn-secondary:hover{background:var(--carvao);color:var(--offwhite)}
+.btn-ghost{background:transparent;color:var(--carvao);border-color:rgba(34,39,47,.18)}
+.btn-ghost:hover{border-color:var(--carvao)}
+.btn-gold{background:var(--ouro);color:var(--carvao)}
+.btn-gold:hover{background:#bd9757}
+.btn .dot{width:7px;height:7px;border-radius:50%;background:var(--ouro)}
+.btn-primary .dot{background:var(--ouro)}
+.btn-gold .dot{background:var(--carvao)}
+
+.linkdot{font-family:var(--sans);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--carvao);
+  background:none;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:10px;padding:6px 0;position:relative}
+.linkdot::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--ouro);transition:width .3s}
+.linkdot:hover::after{width:100%}
+.linkdot .dot{width:6px;height:6px;border-radius:50%;background:var(--ouro)}
+
+.sm{padding:10px 22px;font-size:.7rem}
+.lg{padding:19px 46px;font-size:.85rem}
+.disabled{opacity:.4;pointer-events:none}
+</style>
+</head>
+<body>
+  <div class="eyebrow">By Jove! · Components</div>
+  <h1 class="title">Botões</h1>
+  <div class="tag">feita de encontros.</div>
+  <div class="rule"></div>
+
+  <div class="sub">Variantes</div>
+  <div class="row">
+    <button class="btn btn-primary">Entrar em quadra</button>
+    <button class="btn btn-secondary">Explorar coleção</button>
+    <button class="btn btn-ghost">Saiba mais</button>
+    <button class="btn btn-gold"><span class="dot"></span>jove! club</button>
+    <button class="linkdot"><span class="dot"></span>Ver todos os encontros</button>
+  </div>
+
+  <div class="sub">Tamanhos</div>
+  <div class="row">
+    <button class="btn btn-primary sm">Small</button>
+    <button class="btn btn-primary">Medium</button>
+    <button class="btn btn-primary lg">Large</button>
+  </div>
+
+  <div class="sub">Estados</div>
+  <div class="row">
+    <button class="btn btn-primary">Default</button>
+    <button class="btn btn-primary" style="background:#171b21">Hover</button>
+    <button class="btn btn-primary disabled">Disabled</button>
+  </div>
+</body>
+</html>

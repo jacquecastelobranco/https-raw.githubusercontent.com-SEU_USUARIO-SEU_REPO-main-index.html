@@ -1,0 +1,72 @@
+/* ============================================================
+   BY JOVE! — Design Tokens
+   "Feita de encontros."
+   Base estratégica v1.0 — Julho 2026
+   ============================================================ */
+
+:root {
+  /* ---- Paleta oficial ---- */
+  --bj-offwhite:  #F6F2EC; /* base clara e silenciosa */
+  --bj-areia:     #E7DFD2; /* acolhimento, naturalidade */
+  --bj-taupe:     #D1C6B7; /* neutro quente intermediário */
+  --bj-pedra:     #B2A89B; /* neutralidade e equilíbrio */
+  --bj-carvao:    #22272F; /* cor principal da marca */
+  --bj-ouro:      #C9A66A; /* ponto de encontro — acento */
+
+  /* ---- Extensões cromáticas (documento estratégico) ---- */
+  --bj-marinho:   #162230; /* profundidade e estabilidade */
+  --bj-ouro-fosco:#B69A67; /* dourado fosco — assinatura */
+  --bj-mineral:   #6E6A65; /* neutro mineral */
+  --bj-verde:     #6F786B; /* verde discreto — movimento */
+
+  /* ---- Papéis semânticos ---- */
+  --bj-bg:        var(--bj-offwhite);
+  --bj-surface:   #FBF9F5;
+  --bj-ink:       var(--bj-carvao);
+  --bj-ink-soft:  var(--bj-mineral);
+  --bj-line:      rgba(34, 39, 47, 0.14);
+  --bj-line-soft: rgba(34, 39, 47, 0.08);
+  --bj-accent:    var(--bj-ouro);
+
+  /* ---- Tipografia ---- */
+  --bj-serif: "Cormorant Garamond", "Cormorant", Georgia, "Times New Roman", serif;
+  --bj-sans:  "Jost", "Futura", "Century Gothic", "Helvetica Neue", Arial, sans-serif;
+
+  /* ---- Escala tipográfica ---- */
+  --bj-fs-display: clamp(3.2rem, 8vw, 6rem);
+  --bj-fs-h1: clamp(2.2rem, 5vw, 3.4rem);
+  --bj-fs-h2: 1.9rem;
+  --bj-fs-h3: 1.35rem;
+  --bj-fs-body: 1rem;
+  --bj-fs-small: 0.82rem;
+  --bj-fs-eyebrow: 0.72rem;
+
+  /* ---- Tracking (marca usa espaçamento amplo) ---- */
+  --bj-track-eyebrow: 0.34em;
+  --bj-track-tagline: 0.42em;
+  --bj-track-wide: 0.16em;
+
+  /* ---- Espaçamento (escala 4px) ---- */
+  --bj-space-1: 4px;
+  --bj-space-2: 8px;
+  --bj-space-3: 12px;
+  --bj-space-4: 16px;
+  --bj-space-6: 24px;
+  --bj-space-8: 32px;
+  --bj-space-12: 48px;
+  --bj-space-16: 64px;
+  --bj-space-24: 96px;
+
+  /* ---- Raios e traços ---- */
+  --bj-radius-sm: 4px;
+  --bj-radius-md: 10px;
+  --bj-radius-lg: 18px;
+  --bj-radius-pill: 999px;
+
+  /* ---- Sombra (discreta, sempre suave) ---- */
+  --bj-shadow: 0 18px 48px -24px rgba(34, 39, 47, 0.35);
+  --bj-shadow-soft: 0 8px 30px -18px rgba(34, 39, 47, 0.28);
+
+  /* ---- Ponto proprietário ---- */
+  --bj-dot: 8px;
+}
